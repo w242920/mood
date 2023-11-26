@@ -11382,4 +11382,9 @@ textarea.form-control-lg {
   height: auto;
   background-size: cover;
   background-position: center center;
+}
+
+.pag-btn-size {
+  height: 50px;
+  width: 50px;
 }/*# sourceMappingURL=all.css.map */
