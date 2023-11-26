@@ -11367,4 +11367,12 @@ textarea.form-control-lg {
   height: 480px;
   background-size: cover;
   background-position: center center;
+}
+
+.Noto-serif-SC {
+  font-family: "Noto Serif SC", sans-serif;
+}
+
+.Montserrat {
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=all.css.map */
