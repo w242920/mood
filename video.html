@@ -374,6 +374,77 @@
       </section>
     </main>
 
+    <!-- 頁尾資訊 -->
+    <footer
+      class="container my-4 py-4 d-flex flex-column justify-content-center"
+    >
+      <!-- 聯絡資訊 -->
+      <div class="d-flex flex-column flex-md-row justify-content-md-between">
+        <!-- md 以下顯示 Logo -->
+        <div class="text-center mt-5 mb-4 d-md-none">
+          <img
+            src="./pictures/logo.png"
+            alt="logo圖片"
+            style="height: 96px; width: 232px"
+          />
+        </div>
+
+        <!-- md 以上顯示 Logo-->
+        <div class="text-center mt-5 mb-4 d-none d-md-block">
+          <img
+            src="./pictures/logo.png"
+            alt="logo圖片"
+            style="height: 72px; width: 174px"
+          />
+        </div>
+
+        <!-- md 以下顯示 info -->
+        <div class="contact-info my-3">
+          <div class="text-center my-4 d-md-none" style="font-size: 60px">
+            <a href="#" class="bi bi-facebook mx-2 link-coffee"></a>
+            <a href="#" class="bi bi-youtube mx-2 link-coffee"></a>
+            <a href="#" class="bi bi-instagram mx-2 link-coffee"></a>
+          </div>
+
+          <div
+            class="text-gray1 text-center d-md-none pb-3"
+            style="font-size: 20px"
+          >
+            <p>TEL: 00-0000-0000</p>
+            <p>Email: driftmood@gmail.com</p>
+          </div>
+
+          <!-- md 以上顯示 info -->
+          <div class="d-flex flex-column">
+            <div
+              class="text-center my-4 d-none d-md-inline-block"
+              style="font-size: 36px"
+            >
+              <a href="#" class="bi bi-facebook mx-2 link-coffee"></a>
+              <a href="#" class="bi bi-youtube mx-2 link-coffee"></a>
+              <a href="#" class="bi bi-instagram mx-2 link-coffee"></a>
+            </div>
+
+            <div
+              class="text-gray1 text-center d-none d-md-block pb-3"
+              style="font-size: 16px"
+            >
+              <p>TEL: 00-0000-0000</p>
+              <p>Email: driftmood@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 聲明 -->
+      <div
+        class="disclaimer text-gray1 text-center border-top border-3 border-gray4 my-2 pt-5 fs-6"
+      >
+        <p>Copyright ©2023 Search for XX All right reserved.</p>
+        <p>本專題僅為學習用途，不做任何商業使用，圖片來源請見 github repo</p>
+      </div>
+    </footer>
+
     <!-- 載入 JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
