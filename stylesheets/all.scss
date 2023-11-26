@@ -1,3 +1,5 @@
+//______________↓ 載入部分元件 ↓_____________________
+
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
@@ -45,4 +47,6 @@
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../node_modules/bootstrap/scss/utilities/api";
 
+//______________↓ 載入自訂元件 ↓_____________________
 // 8. Add additional custom code here
+@import "./components/header2";

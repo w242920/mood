@@ -11362,4 +11362,9 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.header2 {
+  height: 480px;
+  background-size: cover;
+  background-position: center center;
 }/*# sourceMappingURL=all.css.map */
