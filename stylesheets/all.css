@@ -11375,4 +11375,11 @@ textarea.form-control-lg {
 
 .Montserrat {
   font-family: "Montserrat", sans-serif;
+}
+
+.image-size1 {
+  width: 40%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
 }/*# sourceMappingURL=all.css.map */
