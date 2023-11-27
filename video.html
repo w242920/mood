@@ -64,7 +64,7 @@
           <span class="material-symbols-outlined text-coffee">menu</span>
         </button>
         <div
-          class="collapse navbar-collapse ms-3 ms-xl-5"
+          class="collapse navbar-collapse ms-3 ms-xl-5 text-center"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -93,13 +93,20 @@
             </li>
           </ul>
 
-          <button
-            type="button"
-            class="btn btn-outline-coffee d-block px-5 me-3 mb-2 mb-lg-0"
-          >
-            登入
-          </button>
-          <button type="button" class="btn btn-coffee px-5">註冊</button>
+          <div class="d-flex flex-column flex-lg-row my-3">
+            <button
+              type="button"
+              class="btn btn-outline-coffee px-5 mb-lg-0 mx-8 mx-md-9 mx-lg-0 mb-2 mb-lg-0 me-lg-3"
+            >
+              登入
+            </button>
+            <button
+              type="button"
+              class="btn btn-coffee px-5 mx-8 mx-md-9 mx-lg-0"
+            >
+              註冊
+            </button>
+          </div>
         </div>
       </div>
     </nav>
@@ -112,218 +119,220 @@
       "
     ></header>
 
-    <!-- 網頁內容 -->
-    <main class="container mb-5">
-      <!-- 麵包屑 -->
-      <nav
-        class="my-5"
-        style="--bs-breadcrumb-divider: '>'"
-        aria-label="breadcrumb"
-      >
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">首頁</a></li>
-          <li class="breadcrumb-item active" aria-current="page">推薦影片</li>
-        </ol>
-      </nav>
+    <!-- 背景色 -->
+    <div style="background-color: #fff2e8">
+      <!-- 網頁內容 -->
+      <main class="container pt-4">
+        <!-- 麵包屑 -->
+        <nav
+          class="my-5"
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">推薦影片</li>
+          </ol>
+        </nav>
 
-      <!-- 分類紐、搜索組容器 -->
-      <section class="d-flex flex-column flex-md-row-reverse mb-4">
-        <!-- 搜尋框 -->
-        <div class="search-box Montserrat mb-3">
-          <div class="input-group mb-3">
-            <input
-              class="form-control border-milktea text-gray4"
-              type="text"
-              value="搜尋關鍵字..."
-              aria-label="readonly input example"
-              readonly
-            />
+        <!-- 分類紐、搜索組容器 -->
+        <section class="d-flex flex-column flex-md-row-reverse mb-4">
+          <!-- 搜尋框 -->
+          <div class="search-box Montserrat mb-3 me-7 me-md-0">
+            <div class="input-group mb-3">
+              <input
+                class="form-control border-milktea text-gray4"
+                type="text"
+                value="搜尋關鍵字..."
+                aria-label="readonly input example"
+                readonly
+              />
 
+              <button
+                class="btn btn-outline-milktea material-symbols-outlined"
+                type="button"
+                id="button-addon2"
+              >
+                search
+              </button>
+            </div>
+          </div>
+
+          <!-- 分類按紐群 -->
+          <div class="category-buttons me-auto">
             <button
-              class="btn btn-outline-milktea material-symbols-outlined"
               type="button"
-              id="button-addon2"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
             >
-              search
+              全部
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
+            >
+              正念
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
+            >
+              冥想
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+            >
+              自我接納
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+            >
+              創傷療癒
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+            >
+              靈性成長
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+            >
+              生死之間
             </button>
           </div>
-        </div>
+        </section>
 
-        <!-- 分類按紐群 -->
-        <div class="category-buttons me-auto">
-          <button
-            type="button"
-            class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
-          >
-            全部
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
-          >
-            正念
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
-          >
-            冥想
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-coffee rounded-pill me-2 mb-2"
-          >
-            自我接納
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-coffee rounded-pill me-2 mb-2"
-          >
-            創傷療癒
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-coffee rounded-pill me-2 mb-2"
-          >
-            靈性成長
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-coffee rounded-pill me-2 mb-2"
-          >
-            生死之間
-          </button>
-        </div>
-      </section>
+        <!-- 推薦影片列表 -->
+        <section class="video-cards mb-5">
+          <div class="card border-milktea mb-3">
+            <div class="d-flex flex-column flex-md-row" style="height: 240px">
+              <div
+                class="image-size1"
+                style="background-image: url(./pictures/video1.png)"
+              ></div>
 
-      <!-- 推薦影片列表 -->
-      <section class="video-cards mb-5">
-        <div class="card border-milktea mb-3">
-          <div class="d-flex flex-column flex-md-row" style="height: 240px">
-            <div
-              class="image-size1"
-              style="background-image: url(./pictures/video1.png)"
-            ></div>
+              <div class="d-flex">
+                <div class="card-body ms-2">
+                  <h5
+                    class="card-title text-gray1 h4 overflow-hidden"
+                    style="height: 3.5rem; max-width: 50rem"
+                  >
+                    《找回你的愛與勇氣》愛情/友情/親情皆適用
+                    ｜相信我，療癒永遠都不會太晚｜不完美講師Sowilo
+                  </h5>
+                  <p
+                    class="card-text text-gray1 Montserrat pt-3 mb-2 overflow-hidden"
+                    style="height: 8.5rem; max-width: 50rem"
+                  >
+                    你為什麼沒辦法在關係中勇敢去愛、投入進去？<br />
+                    關係包含愛情、友情、親情，甚至包含更廣泛的人群關係、人群服務、集體利益、人類之間的愛，都在其中。
+                  </p>
+                </div>
 
-            <div class="d-flex">
-              <div class="card-body ms-2">
-                <h5
-                  class="card-title text-gray1 h4 overflow-hidden"
-                  style="height: 3.5rem; max-width: 50rem"
-                >
-                  《找回你的愛與勇氣》愛情/友情/親情皆適用
-                  ｜相信我，療癒永遠都不會太晚｜不完美講師Sowilo
-                </h5>
-                <p
-                  class="card-text text-gray1 Montserrat pt-3 mb-2 overflow-hidden"
-                  style="height: 8.5rem; max-width: 50rem"
-                >
-                  你為什麼沒辦法在關係中勇敢去愛、投入進去？<br />
-                  關係包含愛情、友情、親情，甚至包含更廣泛的人群關係、人群服務、集體利益、人類之間的愛，都在其中。
-                </p>
-              </div>
-
-              <div class="me-3 mt-2">
-                <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                <div class="me-3 mt-2">
+                  <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="card border-milktea mb-3">
-          <div class="d-flex flex-column flex-md-row" style="height: 240px">
-            <div
-              class="image-size1"
-              style="background-image: url(./pictures/video2.png)"
-            ></div>
+          <div class="card border-milktea mb-3">
+            <div class="d-flex flex-column flex-md-row" style="height: 240px">
+              <div
+                class="image-size1"
+                style="background-image: url(./pictures/video2.png)"
+              ></div>
 
-            <div class="d-flex">
-              <div class="card-body ms-2">
-                <h5
-                  class="card-title text-gray1 h4 overflow-hidden"
-                  style="height: 3.5rem; max-width: 50rem"
-                >
-                  《有些傷必須要療癒》保證感人！內在小孩與父母的靈魂深處想對你說什麼？
-                  ｜相信我，你可以重新愛上你自己｜不完美講師Sowilo
-                </h5>
-                <p
-                  class="card-text text-gray1 Montserrat pt-3 mb-2 overflow-hidden"
-                  style="height: 8.5rem; max-width: 50rem"
-                >
-                  這邊定義的內在小孩，指因你的童年創傷，而產生的某個人格。簡單來說，童年陰影造成的某種性格。<br />
-                  人類有種機制，遇到重大創傷，頭腦會自動去屏蔽或變造那個訊息，在那個當下並非不好的，因為我們要活下去，但長大後還是需要被處理，否則會變成你背後的敵人，會在某種時候抓住你，讓你做出一些奇怪的行為。<br />
-                  創傷不一定要性侵、暴力才算，比如你父母很疼愛你，但某次逛百貨公司不小心把你丟包，你找不到家人的感覺，或是你不小心被關在暗暗的地方，感覺到被忽視，或是被強迫討誰的歡心，有些父母會這樣。<br />
-                  創傷是本人覺得有就是有，不需要去比較誰的比較嚴重。
-                </p>
-              </div>
+              <div class="d-flex">
+                <div class="card-body ms-2">
+                  <h5
+                    class="card-title text-gray1 h4 overflow-hidden"
+                    style="height: 3.5rem; max-width: 50rem"
+                  >
+                    《有些傷必須要療癒》保證感人！內在小孩與父母的靈魂深處想對你說什麼？
+                    ｜相信我，你可以重新愛上你自己｜不完美講師Sowilo
+                  </h5>
+                  <p
+                    class="card-text text-gray1 Montserrat pt-3 mb-2 overflow-hidden"
+                    style="height: 8.5rem; max-width: 50rem"
+                  >
+                    這邊定義的內在小孩，指因你的童年創傷，而產生的某個人格。簡單來說，童年陰影造成的某種性格。<br />
+                    人類有種機制，遇到重大創傷，頭腦會自動去屏蔽或變造那個訊息，在那個當下並非不好的，因為我們要活下去，但長大後還是需要被處理，否則會變成你背後的敵人，會在某種時候抓住你，讓你做出一些奇怪的行為。<br />
+                    創傷不一定要性侵、暴力才算，比如你父母很疼愛你，但某次逛百貨公司不小心把你丟包，你找不到家人的感覺，或是你不小心被關在暗暗的地方，感覺到被忽視，或是被強迫討誰的歡心，有些父母會這樣。<br />
+                    創傷是本人覺得有就是有，不需要去比較誰的比較嚴重。
+                  </p>
+                </div>
 
-              <div class="me-3 mt-2">
-                <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                <div class="me-3 mt-2">
+                  <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 分頁按鈕組 -->
-      <section class="pag-buttom-grop text-center">
-        <button
-          type="button"
-          class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 material-symbols-outlined"
-        >
-          keyboard_double_arrow_left
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
-        >
-          1
-        </button>
-        <button
-          type="button "
-          class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
-        >
-          2
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
-        >
-          3
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 d-none d-md-inline-block"
-        >
-          4
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 d-none d-md-inline-block"
-        >
-          5
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
-        >
-          ...
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
-        >
-          12
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 material-symbols-outlined"
-        >
-          keyboard_double_arrow_right
-        </button>
+        <!-- 分頁按鈕組 -->
+        <section class="pag-buttom-grop text-center">
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 material-symbols-outlined"
+          >
+            keyboard_double_arrow_left
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+          >
+            1
+          </button>
+          <button
+            type="button "
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+          >
+            2
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+          >
+            3
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 d-none d-md-inline-block"
+          >
+            4
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 d-none d-md-inline-block"
+          >
+            5
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+          >
+            ...
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+          >
+            12
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 material-symbols-outlined"
+          >
+            keyboard_double_arrow_right
+          </button>
 
-        <!-- Bootstrap 的 樣板 -->
-        <!-- <nav aria-label="Page navigation example">
+          <!-- Bootstrap 的 樣板 -->
+          <!-- <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item">
             <a
@@ -361,23 +370,21 @@
           </li>
         </ul>
       </nav> -->
-      </section>
+        </section>
 
-      <!-- 底部插圖 -->
-      <section class="pag-bottom-img text-center my-5">
-        <img
-          class="img-fluid"
-          src="./pictures/video.png"
-          alt="推薦影片的插圖"
-          style="width: 240px"
-        />
-      </section>
-    </main>
-
+        <!-- 底部插圖 -->
+        <section class="pag-bottom-img text-center my-5 pb-5">
+          <img
+            class="img-fluid"
+            src="./pictures/video.png"
+            alt="推薦影片的插圖"
+            style="width: 240px"
+          />
+        </section>
+      </main>
+    </div>
     <!-- 頁尾資訊 -->
-    <footer
-      class="container my-4 py-4 d-flex flex-column justify-content-center"
-    >
+    <footer class="container d-flex flex-column justify-content-center">
       <!-- 聯絡資訊 -->
       <div class="d-flex flex-column flex-md-row justify-content-md-between">
         <!-- md 以下顯示 Logo -->
@@ -390,7 +397,7 @@
         </div>
 
         <!-- md 以上顯示 Logo-->
-        <div class="text-center mt-5 mb-4 d-none d-md-block">
+        <div class="text-center align-self-center d-none d-md-block">
           <img
             src="./pictures/logo.png"
             alt="logo圖片"
