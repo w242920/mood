@@ -428,6 +428,11 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  // ↓ 自訂新增 ↓
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 9.5,
+  9: $spacer * 15,
 ) !default;
 // scss-docs-end spacer-variables-maps
 

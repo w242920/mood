@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>心靈探索網站</title>
+
+    <!-- 連結 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheets/all.css" />
+
+    <!-- 載入 Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Noto+Sans+TC:wght@700&family=Noto+Serif+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Noto Sans TC", "Noto Serif SC", "Montserrat", sans-serif;
+      }
+    </style>
+
+    <!-- 載入 Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- 載入 Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-white">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            class=""
+            src="/pictures/logo.png"
+            alt="logo圖片"
+            width="116px"
+            height="48px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-outlined text-coffee">menu</span>
+        </button>
+        <div
+          class="collapse navbar-collapse ms-3 ms-xl-5 text-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+                >關於我們</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+                >專欄文章</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+                >推薦書籍</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+                >推薦影片</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="#">留言板</a>
+            </li>
+          </ul>
+
+          <div class="d-flex flex-column flex-lg-row my-3">
+            <button
+              type="button"
+              class="btn btn-outline-coffee px-5 mb-lg-0 mx-8 mx-md-9 mx-lg-0 mb-2 mb-lg-0 me-lg-3"
+            >
+              登入
+            </button>
+            <button
+              type="button"
+              class="btn btn-coffee px-5 mx-8 mx-md-9 mx-lg-0"
+            >
+              註冊
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner 圖 -->
+    <header
+      class="header2"
+      style="
+        background-image: url(https://images.unsplash.com/photo-1599791322165-ec4e55fa17a9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      "
+    ></header>
+
+    <!-- 背景色 -->
+    <div style="background-color: #fff2e8">
+      <!-- 網頁內容 -->
+      <main class="container pt-4">
+        <!-- 麵包屑 -->
+        <nav
+          class="my-5"
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">推薦影片</li>
+          </ol>
+        </nav>
+
+        <!-- 分類紐、搜索組容器 -->
+        <section class="d-flex flex-column flex-md-row-reverse mb-4">
+          <!-- 搜尋框 -->
+          <div class="search-box Montserrat mb-3 me-7 me-md-0">
+            <div class="input-group mb-3">
+              <input
+                class="form-control border-milktea text-gray4"
+                type="text"
+                value="搜尋關鍵字..."
+                aria-label="readonly input example"
+                readonly
+              />
+
+              <button
+                class="btn btn-outline-milktea material-symbols-outlined"
+                type="button"
+                id="button-addon2"
+              >
+                search
+              </button>
+            </div>
+          </div>
+
+          <!-- 分類按紐群 -->
+          <div class="category-buttons me-auto">
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
+            >
+              全部
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
+            >
+              正念
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
+            >
+              冥想
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+            >
+              自我接納
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+            >
+              創傷療癒
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+            >
+              靈性成長
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+            >
+              生死之間
+            </button>
+          </div>
+        </section>
+
+        <!-- 推薦影片列表 -->
+        <section class="video-cards mb-5">
+          <div class="card border-milktea mb-3">
+            <div class="d-flex flex-column flex-md-row" style="height: 240px">
+              <div
+                class="image-size1"
+                style="background-image: url(./pictures/video1.png)"
+              ></div>
+
+              <div class="d-flex">
+                <div class="card-body ms-2">
+                  <h5
+                    class="card-title text-gray1 h4 overflow-hidden"
+                    style="height: 3.5rem; max-width: 50rem"
+                  >
+                    《找回你的愛與勇氣》愛情/友情/親情皆適用
+                    ｜相信我，療癒永遠都不會太晚｜不完美講師Sowilo
+                  </h5>
+                  <p
+                    class="card-text text-gray1 Montserrat pt-3 mb-2 overflow-hidden"
+                    style="height: 8.5rem; max-width: 50rem"
+                  >
+                    你為什麼沒辦法在關係中勇敢去愛、投入進去？<br />
+                    關係包含愛情、友情、親情，甚至包含更廣泛的人群關係、人群服務、集體利益、人類之間的愛，都在其中。
+                  </p>
+                </div>
+
+                <div class="me-3 mt-2">
+                  <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-milktea mb-3">
+            <div class="d-flex flex-column flex-md-row" style="height: 240px">
+              <div
+                class="image-size1"
+                style="background-image: url(./pictures/video2.png)"
+              ></div>
+
+              <div class="d-flex">
+                <div class="card-body ms-2">
+                  <h5
+                    class="card-title text-gray1 h4 overflow-hidden"
+                    style="height: 3.5rem; max-width: 50rem"
+                  >
+                    《有些傷必須要療癒》保證感人！內在小孩與父母的靈魂深處想對你說什麼？
+                    ｜相信我，你可以重新愛上你自己｜不完美講師Sowilo
+                  </h5>
+                  <p
+                    class="card-text text-gray1 Montserrat pt-3 mb-2 overflow-hidden"
+                    style="height: 8.5rem; max-width: 50rem"
+                  >
+                    這邊定義的內在小孩，指因你的童年創傷，而產生的某個人格。簡單來說，童年陰影造成的某種性格。<br />
+                    人類有種機制，遇到重大創傷，頭腦會自動去屏蔽或變造那個訊息，在那個當下並非不好的，因為我們要活下去，但長大後還是需要被處理，否則會變成你背後的敵人，會在某種時候抓住你，讓你做出一些奇怪的行為。<br />
+                    創傷不一定要性侵、暴力才算，比如你父母很疼愛你，但某次逛百貨公司不小心把你丟包，你找不到家人的感覺，或是你不小心被關在暗暗的地方，感覺到被忽視，或是被強迫討誰的歡心，有些父母會這樣。<br />
+                    創傷是本人覺得有就是有，不需要去比較誰的比較嚴重。
+                  </p>
+                </div>
+
+                <div class="me-3 mt-2">
+                  <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 分頁按鈕組 -->
+        <section class="pag-buttom-grop text-center">
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 material-symbols-outlined"
+          >
+            keyboard_double_arrow_left
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+          >
+            1
+          </button>
+          <button
+            type="button "
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+          >
+            2
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+          >
+            3
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 d-none d-md-inline-block"
+          >
+            4
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 d-none d-md-inline-block"
+          >
+            5
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+          >
+            ...
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+          >
+            12
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 material-symbols-outlined"
+          >
+            keyboard_double_arrow_right
+          </button>
+
+          <!-- Bootstrap 的 樣板 -->
+          <!-- <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a
+              class="page-link material-symbols-outlined"
+              href="#"
+              aria-label="Previous"
+            >
+              arrow_circle_left
+            </a>
+          </li>
+
+          <li class="page-item">
+            <a class="page-link material-symbols-outlined" href="#"
+              >counter_1</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link material-symbols-outlined" href="#"
+              >counter_2</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link material-symbols-outlined" href="#"
+              >counter_3</a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link material-symbols-outlined"
+              href="#"
+              aria-label="Previous"
+            >
+              arrow_circle_right
+            </a>
+          </li>
+        </ul>
+      </nav> -->
+        </section>
+
+        <!-- 底部插圖 -->
+        <section class="pag-bottom-img text-center my-5 pb-5">
+          <img
+            class="img-fluid"
+            src="./pictures/video.png"
+            alt="推薦影片的插圖"
+            style="width: 240px"
+          />
+        </section>
+      </main>
+    </div>
+    <!-- 頁尾資訊 -->
+    <footer class="container d-flex flex-column justify-content-center">
+      <!-- 聯絡資訊 -->
+      <div class="d-flex flex-column flex-md-row justify-content-md-between">
+        <!-- md 以下顯示 Logo -->
+        <div class="text-center mt-5 mb-4 d-md-none">
+          <img
+            src="./pictures/logo.png"
+            alt="logo圖片"
+            style="height: 96px; width: 232px"
+          />
+        </div>
+
+        <!-- md 以上顯示 Logo-->
+        <div class="text-center align-self-center d-none d-md-block">
+          <img
+            src="./pictures/logo.png"
+            alt="logo圖片"
+            style="height: 72px; width: 174px"
+          />
+        </div>
+
+        <!-- md 以下顯示 info -->
+        <div class="contact-info my-3">
+          <div class="text-center my-4 d-md-none" style="font-size: 60px">
+            <a href="#" class="bi bi-facebook mx-2 link-coffee"></a>
+            <a href="#" class="bi bi-youtube mx-2 link-coffee"></a>
+            <a href="#" class="bi bi-instagram mx-2 link-coffee"></a>
+          </div>
+
+          <div
+            class="text-gray1 text-center d-md-none pb-3"
+            style="font-size: 20px"
+          >
+            <p>TEL: 00-0000-0000</p>
+            <p>Email: driftmood@gmail.com</p>
+          </div>
+
+          <!-- md 以上顯示 info -->
+          <div class="d-flex flex-column">
+            <div
+              class="text-center my-4 d-none d-md-inline-block"
+              style="font-size: 36px"
+            >
+              <a href="#" class="bi bi-facebook mx-2 link-coffee"></a>
+              <a href="#" class="bi bi-youtube mx-2 link-coffee"></a>
+              <a href="#" class="bi bi-instagram mx-2 link-coffee"></a>
+            </div>
+
+            <div
+              class="text-gray1 text-center d-none d-md-block pb-3"
+              style="font-size: 16px"
+            >
+              <p>TEL: 00-0000-0000</p>
+              <p>Email: driftmood@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 聲明 -->
+      <div
+        class="disclaimer text-gray1 text-center border-top border-3 border-gray4 my-2 pt-5 fs-6"
+      >
+        <p>Copyright ©2023 Search for XX All right reserved.</p>
+        <p>本專題僅為學習用途，不做任何商業使用，圖片來源請見 github repo</p>
+      </div>
+    </footer>
+
+    <!-- 載入 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
