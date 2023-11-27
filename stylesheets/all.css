@@ -12999,4 +12999,19 @@ textarea.form-control-lg {
 .pag-btn-size {
   height: 50px;
   width: 50px;
+}
+
+.videobox {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.videobox-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=all.css.map */
