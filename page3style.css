@@ -1,0 +1,163 @@
+*{box-sizing: border-box;}
+.main{
+  background-color: #fff2e8;
+  margin-right: -15px; /* 负边距消除右侧留白 */
+  margin-left: -15px; /* 负边距消除左侧留白 */
+}
+
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn {
+  font-weight:  bold;
+  background: white;
+  color: #7C604B;
+  border-color: #7C604B;
+  width: 124px;
+  height: 64px;
+  border-radius: 20px;
+  /* margin-right: 16px; */
+}
+.btn:hover {
+  background: #2baf8d;
+}
+.btn:active {
+  background: #7c604b;
+}/*# sourceMappingURL=page3style.css.map */
+
+.body{
+  font-size: 20px;
+  /* width: max-content; */
+  width: 100%;
+}
+.crumbs{
+  width: 140px;
+  height: 27px;
+  margin-top: 68px;
+  margin-bottom: 60px;
+}
+.articleTop {
+  background-color: #fff2e8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+};
+
+.search{
+  display: flex;
+}
+.search a{
+  text-decoration: none;
+  color: #3d1101;
+}
+
+
+.classify, .search{
+  display:inline-block;
+}
+
+.articleContainer{
+  margin-top: 68px;
+  background-color: #fff2e8;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.article{
+  background-color: white;
+  display: flex;
+  height: 588px;
+  max-width: 1294px;
+  /* border:solid 2px blue; */
+  border-radius: 10px;
+  margin-bottom: 69px;
+}
+.articleMain{
+  max-width: 461.96px;
+  /* border:solid 2px blue; */
+  /* display: flex; */
+  align-items: center; /* 在垂直方向上置中 */
+  justify-content: center; /* 在水平方向上置中 */
+  /* height: 100vh; 设置 div2 的高度，可以根据需要调整 */
+  /* border: 1px solid #ccc; 为了演示，添加边框样式 */
+}
+.articlePic{
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  /* max-width: 574px; /* 設定最大寬度 */
+  /* max-height: 440px; 設定最大高度 */ */
+  width: 100%; /* 使寬度充滿父元素 */
+  margin: 0 auto; /* 水平居中 */
+}
+.articlePic img{
+  max-width: 574px; /* 使圖片最大寬度不超過容器寬度 */
+  max-height: 440px; /* 使圖片最大高度不超過容器高度 */
+  height: auto; /* 保持高度自適應內容 */
+  display: block; /* 去除圖片底部空白 */
+}
+.articleTitle{
+  font-weight:  bold;
+}
+.loveIcon{
+  display: flex;
+  justify-content: space-between;
+  padding: 54px 45.94px 0 0;
+}
+.fa fa-heart-o{
+  margin-left: auto;
+}
+.articleContent{
+  /* display: flex; */
+  justify-content: center;
+  /* padding-top:
+   152px; */
+  padding-right: 86.91px;
+  max-width: 100%; /* 文字框的最大寬度為父元素的100% */
+  word-wrap: break-word; /* 如果一個單詞太長，就斷行 */
+}
+.articleTitle{
+  padding: 24px 0 24px 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+.pagination {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  align-items: center; /* 垂直置中 */
+  height: 5vh; /* 這裡假設容器高度佔滿整個視窗 */
+}
+/* 分页链接 */
+.pagination a {
+  color: #7C604B;
+  font-size: 24px;
+  font-weight: bold;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border:solid 1px #7C604B;
+  border-radius: 100%;
+  margin: 8px;
+}
+
+/* 设置活动/当前链接的样式 */
+.pagination a.active {
+  background-color: #7C604B;
+  color: white;
+}
+
+/* 在鼠标悬停时添加灰色背景色 */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.heartImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 68px;
+  background-color: white;
+}
