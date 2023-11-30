@@ -12996,6 +12996,13 @@ textarea.form-control-lg {
   background-position: center center;
 }
 
+.image-size2 {
+  width: 40%;
+  height: auto;
+  background-size: cover;
+  background-position: top center;
+}
+
 .pag-btn-size {
   height: 50px;
   width: 50px;
