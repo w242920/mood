@@ -1,178 +1,842 @@
-<!doctype html>
-<html lang="en">
-<head>
-    
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 連結Font Awesome icon -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="page3style.css">
-</head>
-<body>
-<div class="body container-fluid">
-<div class="banner"></div>
-<div class="articleBanner"></div>
-<div class="main">
-<div class="container">
-    <div class="row "> 
-        <div class="col-10">
-            <div class="crumbs"> 首頁>專欄文章</div>
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>心靈探索網站</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- all.css -->
+    <link rel="stylesheet" href="./stylesheets/all.css" />
+
+    <!-- 連結Font Awesome icon -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+
+    <!-- 載入 Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Noto+Sans+TC:wght@700&family=Noto+Serif+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Noto Sans TC", "Noto Serif SC", "Montserrat", sans-serif;
+      }
+    </style>
+
+    <!-- 載入 Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- 載入 Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
+    <!-- 原本  css 檔案 -->
+    <!-- <link rel="stylesheet" href="page3style.css" /> -->
+  </head>
+
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-white">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            class=""
+            src="/pictures/logo.png"
+            alt="logo圖片"
+            width="116px"
+            height="48px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-outlined text-coffee">menu</span>
+        </button>
+        <div
+          class="collapse navbar-collapse ms-3 ms-xl-5 text-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+                >關於我們</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+                >專欄文章</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+                >推薦書籍</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+                >推薦影片</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="#">留言板</a>
+            </li>
+          </ul>
+
+          <div class="d-flex flex-column flex-lg-row my-3">
+            <button
+              type="button"
+              class="btn btn-outline-coffee px-5 mb-lg-0 mx-8 mx-md-9 mx-lg-0 mb-2 mb-lg-0 me-lg-3"
+            >
+              登入
+            </button>
+            <button
+              type="button"
+              class="btn btn-coffee px-5 mx-8 mx-md-9 mx-lg-0"
+            >
+              註冊
+            </button>
+          </div>
         </div>
-        <div class="articleTop">
-        <div class="classify">
-        <button type="button" class="btn btn-primary">全部</button>
-        <button type="button" class="btn btn-primary">正念</button>
-        <button type="button" class="btn btn-primary">冥想</button>
-        <button type="button" class="btn btn-primary">自我接納</button>
-        <button type="button" class="btn btn-primary">創傷療育</button>
-        <button type="button" class="btn btn-primary">靈性成長</button>
-        <button type="button" class="btn btn-primary">生死之間</button>
-        </div>
-        <div class="search">
-        <input class="search-bar" type="text" name="search" id="search" placeholder="搜尋關鍵字">
-        <button class="search-btn"><i class="fa fa-search"></i></button>
-        </div>  
-        </div>
-        <div class="articleContainer"> 
-        <div class="article">
-        <div class="articlePic ">
-        <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1" alt="">
-        </div>
-        <div class="articleMain">
-        <div class="loveIcon"> 
-        <p></p>
-        <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 40px;"></i>
-        </div>
-        <div class="articleContent">
-        <div class="articlePostdate">2023/10/19</div>
-        <div class="articleTitle">別叫憂鬱的人要快樂一點,會有反效果</div>
-        <div class="articleTxt">許多人會對憂鬱症有不適當的理解，在遇到親友有這方面的困擾時，常會以自身經驗去提供建議，會講一些像是：「就多想一點快樂的事啊」、「那些不好的事就不要想就好了」、「就像我一樣不期不待就不會有傷害啊」… 這一類的話。</div>
-        </div>
-        </div>
-        </div>
-        <div class="article">
-        <div class="articlePic ">
-            <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1" alt="">
-        </div>
-        <div class="articleMain">
-        <div class="loveIcon"> 
-        <p></p>
-        <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 40px;"></i>
-        </div>
-        <div class="articleContent">
-        <div class="articlePostdate">2023/10/19</div>
-        <div class="articleTitle">從覺察他人回歸瞭解自我，你我都要社會情續學習</div>
-        <div class="articleTxt">台灣的學生擅長「自我管理」與「社會覺察」，卻不擅長「自我覺察」很少探究自己的內心、定位與價值觀。在無法迴避的資訊爆炸時代，面對與世界的社會比較，我們可以透過社會情緒學習幫助自己。美個選擇都是在認識自己；選擇沒有對錯，跌倒了</div>
-        </div>
-        </div>
-        </div>
-        <div class="article">
-            <div class="articlePic ">
-                <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1" alt="">
+      </div>
+    </nav>
+
+    <!-- Banner 圖 -->
+    <header
+      class="header2"
+      style="
+        background-image: url(https://images.unsplash.com/photo-1589868419214-6f6a08fadb95?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      "
+    ></header>
+
+    <!-- 背景色 -->
+    <div style="background-color: #fff2e8">
+      <main>
+        <div class="container">
+          <div class="row">
+            <!-- 原本麵包屑 -->
+            <!-- <div class="col-10">
+            <div class="crumbs">首頁>專欄文章</div>
+          </div> -->
+
+            <!-- 原本分類按鈕、搜尋框 -->
+            <!-- <div class="articleTop">
+            <div class="classify">
+              <button type="button" class="btn btn-primary">全部</button>
+              <button type="button" class="btn btn-primary">正念</button>
+              <button type="button" class="btn btn-primary">冥想</button>
+              <button type="button" class="btn btn-primary">自我接納</button>
+              <button type="button" class="btn btn-primary">創傷療育</button>
+              <button type="button" class="btn btn-primary">靈性成長</button>
+              <button type="button" class="btn btn-primary">生死之間</button>
             </div>
-            <div class="articleMain">
-            <div class="loveIcon"> 
-            <p></p>
-            <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 40px;"></i>
+            <div class="search">
+              <input
+                class="search-bar"
+                type="text"
+                name="search"
+                id="search"
+                placeholder="搜尋關鍵字"
+              />
+              <button class="search-btn"><i class="fa fa-search"></i></button>
             </div>
-            <div class="articleContent">
-            <div class="articlePostdate">2023/10/19</div>
-            <div class="articleTitle">找回接住自己的勇氣，允許愛自己</div>
-            <div class="articleTxt">往黑暗的地方多探索一點，心理的其他地方反而因此被點亮了。我們或許都有懷疑自己是不是值得被愛的時候，也曾經在低潮時嘗試接住自己，但從什麼時候開始我們失去了接住自己的勇氣了呢？如何找回勇氣、怎麼面對內心傷口，以及當我覺得不值得被愛</div>
+          </div> -->
+
+            <!-- 麵包屑 -->
+            <nav
+              class="my-5"
+              style="--bs-breadcrumb-divider: '>'"
+              aria-label="breadcrumb"
+            >
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  推薦影片
+                </li>
+              </ol>
+            </nav>
+
+            <!-- 分類紐、搜索組容器 -->
+            <section class="d-flex flex-column flex-md-row-reverse mb-4">
+              <!-- 搜尋框 -->
+              <div class="search-box Montserrat mb-3 me-7 me-md-0">
+                <div class="input-group mb-3">
+                  <input
+                    class="form-control border-milktea text-gray4"
+                    type="text"
+                    value="搜尋關鍵字..."
+                    aria-label="readonly input example"
+                    readonly
+                  />
+
+                  <button
+                    class="btn btn-outline-milktea material-symbols-outlined"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    search
+                  </button>
+                </div>
+              </div>
+
+              <!-- 分類按紐群 -->
+              <div class="category-buttons me-auto">
+                <button
+                  type="button"
+                  class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
+                >
+                  全部
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
+                >
+                  正念
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-coffee rounded-pill me-2 mb-2 px-4"
+                >
+                  冥想
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+                >
+                  自我接納
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+                >
+                  創傷療癒
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+                >
+                  靈性成長
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-coffee rounded-pill me-2 mb-2"
+                >
+                  生死之間
+                </button>
+              </div>
+            </section>
+
+            <!-- 原本文章列表 -->
+            <!-- <div class="articleContainer">
+              <div class="article">
+                <div class="articlePic">
+                  <img
+                    src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1"
+                    alt=""
+                  />
+                </div>
+                <div class="articleMain">
+                  <div class="loveIcon">
+                    <p></p>
+                    <i
+                      class="fa fa-heart-o"
+                      aria-hidden="true"
+                      style="font-size: 40px"
+                    ></i>
+                  </div>
+                  <div class="articleContent">
+                    <div class="articlePostdate">2023/10/19</div>
+                    <div class="articleTitle">
+                      別叫憂鬱的人要快樂一點,會有反效果
+                    </div>
+                    <div class="articleTxt">
+                      許多人會對憂鬱症有不適當的理解，在遇到親友有這方面的困擾時，常會以自身經驗去提供建議，會講一些像是：「就多想一點快樂的事啊」、「那些不好的事就不要想就好了」、「就像我一樣不期不待就不會有傷害啊」…
+                      這一類的話。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article">
+                <div class="articlePic">
+                  <img
+                    src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1"
+                    alt=""
+                  />
+                </div>
+                <div class="articleMain">
+                  <div class="loveIcon">
+                    <p></p>
+                    <i
+                      class="fa fa-heart-o"
+                      aria-hidden="true"
+                      style="font-size: 40px"
+                    ></i>
+                  </div>
+                  <div class="articleContent">
+                    <div class="articlePostdate">2023/10/19</div>
+                    <div class="articleTitle">
+                      從覺察他人回歸瞭解自我，你我都要社會情續學習
+                    </div>
+                    <div class="articleTxt">
+                      台灣的學生擅長「自我管理」與「社會覺察」，卻不擅長「自我覺察」很少探究自己的內心、定位與價值觀。在無法迴避的資訊爆炸時代，面對與世界的社會比較，我們可以透過社會情緒學習幫助自己。美個選擇都是在認識自己；選擇沒有對錯，跌倒了
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article">
+                <div class="articlePic">
+                  <img
+                    src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1"
+                    alt=""
+                  />
+                </div>
+                <div class="articleMain">
+                  <div class="loveIcon">
+                    <p></p>
+                    <i
+                      class="fa fa-heart-o"
+                      aria-hidden="true"
+                      style="font-size: 40px"
+                    ></i>
+                  </div>
+                  <div class="articleContent">
+                    <div class="articlePostdate">2023/10/19</div>
+                    <div class="articleTitle">
+                      找回接住自己的勇氣，允許愛自己
+                    </div>
+                    <div class="articleTxt">
+                      往黑暗的地方多探索一點，心理的其他地方反而因此被點亮了。我們或許都有懷疑自己是不是值得被愛的時候，也曾經在低潮時嘗試接住自己，但從什麼時候開始我們失去了接住自己的勇氣了呢？如何找回勇氣、怎麼面對內心傷口，以及當我覺得不值得被愛
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article">
+                <div class="articlePic">
+                  <img
+                    src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1"
+                    alt=""
+                  />
+                </div>
+                <div class="articleMain">
+                  <div class="loveIcon">
+                    <p></p>
+                    <i
+                      class="fa fa-heart-o"
+                      aria-hidden="true"
+                      style="font-size: 40px"
+                    ></i>
+                  </div>
+                  <div class="articleContent">
+                    <div class="articlePostdate">2023/10/19</div>
+                    <div class="articleTitle">
+                      覺察偏見與不平等，找回自我最佳狀態
+                    </div>
+                    <div class="articleTxt">
+                      日常生活中，每一個人面臨到不平等或歧視的處境，可能是由多重因子所交織在一起，有性別、族群、年齡、身心障礙、性傾向、職業等等。如果沒有特別覺察性別刻板印象，社會文化價值觀所形塑的氣氛，或是從原生家庭承襲而來的「應該」，是會對
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article">
+                <div class="articlePic">
+                  <img
+                    src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1"
+                    alt=""
+                  />
+                </div>
+                <div class="articleMain">
+                  <div class="loveIcon">
+                    <p></p>
+                    <i
+                      class="fa fa-heart-o"
+                      aria-hidden="true"
+                      style="font-size: 40px"
+                    ></i>
+                  </div>
+                  <div class="articleContent">
+                    <div class="articlePostdate">2023/10/19</div>
+                    <div class="articleTitle">情緒的表達、接納及照顧</div>
+                    <div class="articleTxt">
+                      即使是身為心理師的品皓，有時候也是會對小孩沒有耐心，甚至會和小孩一起「爆炸」。或許孩子真的就是爸爸媽媽「甜蜜的負擔」；而「情緒」也是我們需要一直不斷練習、不斷學習的課題。或許我們可以試試看更細膩地去瞭解情緒發生的階段和細節。當我們更了解自己、了解自己的情緒，就能夠更有餘裕地應對「衝突現場」。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article">
+                <div class="articlePic">
+                  <img
+                    src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1"
+                    alt=""
+                  />
+                </div>
+                <div class="articleMain">
+                  <div class="loveIcon">
+                    <p></p>
+                    <i
+                      class="fa fa-heart-o"
+                      aria-hidden="true"
+                      style="font-size: 40px"
+                    ></i>
+                  </div>
+                  <div class="articleContent">
+                    <div class="articlePostdate">2023/10/19</div>
+                    <div class="articleTitle">失去所愛該如何面對悲傷</div>
+                    <div class="articleTxt">
+                      當失去所愛，我們都會悲傷。
+                      悲傷從來不是一個待解決的問題，而是一段需要扛過去的經歷…
+                      無論是突如其來的道別、失去至親摯愛，都會令人心神離線、情緒潰堤，不知該如何生活…你不只需要一個宣洩情緒與喘息的地方，還可以給自己合適的關懷與幫助。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- 文章列表 -->
+            <section class="article-cards mb-5">
+              <div class="card border-milktea mb-3">
+                <div
+                  class="d-flex flex-column flex-md-row"
+                  style="height: 240px"
+                >
+                  <div
+                    class="image-size2"
+                    style="
+                      background-image: url(https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1);
+                    "
+                  ></div>
+
+                  <div class="d-flex">
+                    <div class="card-body ms-2">
+                      <p
+                        class="card-text text-gray2 Montserrat my-1 overflow-hidden"
+                        style="height: 1.5rem; max-width: 50rem"
+                      >
+                        2023/10/19
+                      </p>
+                      <h5
+                        class="card-title text-gray1 h4 pt-1 mt-2 overflow-hidden"
+                        style="height: 2rem; max-width: 50rem"
+                      >
+                        別叫憂鬱的人要快樂一點,會有反效果
+                      </h5>
+
+                      <p
+                        class="card-text text-gray1 Montserrat pt-2 mb-2 overflow-hidden"
+                        style="height: 8rem; max-width: 50rem"
+                      >
+                        許多人會對憂鬱症有不適當的理解，在遇到親友有這方面的困擾時，常會以自身經驗去提供建議，會講一些像是：「就多想一點快樂的事啊」、「那些不好的事就不要想就好了」、「就像我一樣不期不待就不會有傷害啊」…
+                        這一類的話。
+                      </p>
+                    </div>
+
+                    <div class="me-3 mt-2">
+                      <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-milktea mb-3">
+                <div
+                  class="d-flex flex-column flex-md-row"
+                  style="height: 240px"
+                >
+                  <div
+                    class="image-size2"
+                    style="
+                      background-image: url(https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1);
+                    "
+                  ></div>
+
+                  <div class="d-flex">
+                    <div class="card-body ms-2">
+                      <p
+                        class="card-text text-gray2 Montserrat my-1 overflow-hidden"
+                        style="height: 1.5rem; max-width: 50rem"
+                      >
+                        2023/10/19
+                      </p>
+                      <h5
+                        class="card-title text-gray1 h4 pt-1 mt-2 overflow-hidden"
+                        style="height: 2rem; max-width: 50rem"
+                      >
+                        從覺察他人回歸瞭解自我，你我都要社會情續學習
+                      </h5>
+
+                      <p
+                        class="card-text text-gray1 Montserrat pt-2 mb-2 overflow-hidden"
+                        style="height: 8rem; max-width: 50rem"
+                      >
+                        台灣的學生擅長「自我管理」與「社會覺察」，卻不擅長「自我覺察」很少探究自己的內心、定位與價值觀。在無法迴避的資訊爆炸時代，面對與世界的社會比較，我們可以透過社會情緒學習幫助自己。美個選擇都是在認識自己；選擇沒有對錯，跌倒了
+                      </p>
+                    </div>
+
+                    <div class="me-3 mt-2">
+                      <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-milktea mb-3">
+                <div
+                  class="d-flex flex-column flex-md-row"
+                  style="height: 240px"
+                >
+                  <div
+                    class="image-size2"
+                    style="
+                      background-image: url(https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1);
+                    "
+                  ></div>
+
+                  <div class="d-flex">
+                    <div class="card-body ms-2">
+                      <p
+                        class="card-text text-gray2 Montserrat my-1 overflow-hidden"
+                        style="height: 1.5rem; max-width: 50rem"
+                      >
+                        2023/10/19
+                      </p>
+                      <h5
+                        class="card-title text-gray1 h4 pt-1 mt-2 overflow-hidden"
+                        style="height: 2rem; max-width: 50rem"
+                      >
+                        找回接住自己的勇氣，允許愛自己
+                      </h5>
+
+                      <p
+                        class="card-text text-gray1 Montserrat pt-2 mb-2 overflow-hidden"
+                        style="height: 8rem; max-width: 50rem"
+                      >
+                        往黑暗的地方多探索一點，心理的其他地方反而因此被點亮了。我們或許都有懷疑自己是不是值得被愛的時候，也曾經在低潮時嘗試接住自己，但從什麼時候開始我們失去了接住自己的勇氣了呢？如何找回勇氣、怎麼面對內心傷口，以及當我覺得不值得被愛
+                      </p>
+                    </div>
+
+                    <div class="me-3 mt-2">
+                      <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-milktea mb-3">
+                <div
+                  class="d-flex flex-column flex-md-row"
+                  style="height: 240px"
+                >
+                  <div
+                    class="image-size2"
+                    style="
+                      background-image: url(https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1);
+                    "
+                  ></div>
+
+                  <div class="d-flex">
+                    <div class="card-body ms-2">
+                      <p
+                        class="card-text text-gray2 Montserrat my-1 overflow-hidden"
+                        style="height: 1.5rem; max-width: 50rem"
+                      >
+                        2023/10/19
+                      </p>
+                      <h5
+                        class="card-title text-gray1 h4 pt-1 mt-2 overflow-hidden"
+                        style="height: 2rem; max-width: 50rem"
+                      >
+                        覺察偏見與不平等，找回自我最佳狀態
+                      </h5>
+
+                      <p
+                        class="card-text text-gray1 Montserrat pt-2 mb-2 overflow-hidden"
+                        style="height: 8rem; max-width: 50rem"
+                      >
+                        日常生活中，每一個人面臨到不平等或歧視的處境，可能是由多重因子所交織在一起，有性別、族群、年齡、身心障礙、性傾向、職業等等。如果沒有特別覺察性別刻板印象，社會文化價值觀所形塑的氣氛，或是從原生家庭承襲而來的「應該」，是會對
+                      </p>
+                    </div>
+
+                    <div class="me-3 mt-2">
+                      <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-milktea mb-3">
+                <div
+                  class="d-flex flex-column flex-md-row"
+                  style="height: 240px"
+                >
+                  <div
+                    class="image-size2"
+                    style="
+                      background-image: url(https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1);
+                    "
+                  ></div>
+
+                  <div class="d-flex">
+                    <div class="card-body ms-2">
+                      <p
+                        class="card-text text-gray2 Montserrat my-1 overflow-hidden"
+                        style="height: 1.5rem; max-width: 50rem"
+                      >
+                        2023/10/19
+                      </p>
+                      <h5
+                        class="card-title text-gray1 h4 pt-1 mt-2 overflow-hidden"
+                        style="height: 2rem; max-width: 50rem"
+                      >
+                        情緒的表達、接納及照顧
+                      </h5>
+
+                      <p
+                        class="card-text text-gray1 Montserrat pt-2 mb-2 overflow-hidden"
+                        style="height: 8rem; max-width: 50rem"
+                      >
+                        即使是身為心理師的品皓，有時候也是會對小孩沒有耐心，甚至會和小孩一起「爆炸」。或許孩子真的就是爸爸媽媽「甜蜜的負擔」；而「情緒」也是我們需要一直不斷練習、不斷學習的課題。或許我們可以試試看更細膩地去瞭解情緒發生的階段和細節。當我們更了解自己、了解自己的情緒，就能夠更有餘裕地應對「衝突現場」。
+                      </p>
+                    </div>
+
+                    <div class="me-3 mt-2">
+                      <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-milktea mb-3">
+                <div
+                  class="d-flex flex-column flex-md-row"
+                  style="height: 240px"
+                >
+                  <div
+                    class="image-size2"
+                    style="
+                      background-image: url(https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1);
+                    "
+                  ></div>
+
+                  <div class="d-flex">
+                    <div class="card-body ms-2">
+                      <p
+                        class="card-text text-gray2 Montserrat my-1 overflow-hidden"
+                        style="height: 1.5rem; max-width: 50rem"
+                      >
+                        2023/10/19
+                      </p>
+                      <h5
+                        class="card-title text-gray1 h4 pt-1 mt-2 overflow-hidden"
+                        style="height: 2rem; max-width: 50rem"
+                      >
+                        失去所愛該如何面對悲傷
+                      </h5>
+
+                      <p
+                        class="card-text text-gray1 Montserrat pt-2 mb-2 overflow-hidden"
+                        style="height: 8rem; max-width: 50rem"
+                      >
+                        當失去所愛，我們都會悲傷。<br />
+                        悲傷從來不是一個待解決的問題，而是一段需要扛過去的經歷…<br />
+                        無論是突如其來的道別、失去至親摯愛，都會令人心神離線、情緒潰堤，不知該如何生活…你不只需要一個宣洩情緒與喘息的地方，還可以給自己合適的關懷與幫助。
+                      </p>
+                    </div>
+
+                    <div class="me-3 mt-2">
+                      <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- 原本分頁按鈕組 -->
+            <!-- <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div> -->
+
+            <!-- 分頁按鈕組 -->
+            <section class="pag-buttom-grop text-center">
+              <button
+                type="button"
+                class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 material-symbols-outlined"
+              >
+                keyboard_double_arrow_left
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+              >
+                1
+              </button>
+              <button
+                type="button "
+                class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+              >
+                2
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+              >
+                3
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 d-none d-md-inline-block"
+              >
+                4
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 d-none d-md-inline-block"
+              >
+                5
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+              >
+                ...
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1"
+              >
+                12
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-coffee rounded-circle pag-btn-size mx-1 material-symbols-outlined"
+              >
+                keyboard_double_arrow_right
+              </button>
+            </section>
+
+            <!-- 底部插圖 -->
+            <section class="pag-bottom-img text-center my-5 pb-5">
+              <img
+                class="img-fluid"
+                src="./pictures/article.png"
+                alt="推薦影片的插圖"
+                style="width: 140px"
+              />
+            </section>
+          </div>
+        </div>
+
+        <!-- 原本底部插圖 -->
+        <!-- <div class="heartImg">
+          <img src="heartImg.png" alt="一個手繪的愛心圖案" />
+        </div> -->
+      </main>
+    </div>
+    <!-- 頁尾資訊 -->
+    <footer class="container d-flex flex-column justify-content-center">
+      <!-- 聯絡資訊 -->
+      <div class="d-flex flex-column flex-md-row justify-content-md-between">
+        <!-- md 以下顯示 Logo -->
+        <div class="text-center mt-5 mb-4 d-md-none">
+          <img
+            src="./pictures/logo.png"
+            alt="logo圖片"
+            style="height: 96px; width: 232px"
+          />
+        </div>
+
+        <!-- md 以上顯示 Logo-->
+        <div class="text-center align-self-center d-none d-md-block">
+          <img
+            src="./pictures/logo.png"
+            alt="logo圖片"
+            style="height: 72px; width: 174px"
+          />
+        </div>
+
+        <!-- md 以下顯示 info -->
+        <div class="contact-info my-3">
+          <div class="text-center my-4 d-md-none" style="font-size: 60px">
+            <a href="#" class="bi bi-facebook mx-2 link-coffee"></a>
+            <a href="#" class="bi bi-youtube mx-2 link-coffee"></a>
+            <a href="#" class="bi bi-instagram mx-2 link-coffee"></a>
+          </div>
+
+          <div
+            class="text-gray1 text-center d-md-none pb-3"
+            style="font-size: 20px"
+          >
+            <p>TEL: 00-0000-0000</p>
+            <p>Email: driftmood@gmail.com</p>
+          </div>
+
+          <!-- md 以上顯示 info -->
+          <div class="d-flex flex-column">
+            <div
+              class="text-center my-4 d-none d-md-inline-block"
+              style="font-size: 36px"
+            >
+              <a href="#" class="bi bi-facebook mx-2 link-coffee"></a>
+              <a href="#" class="bi bi-youtube mx-2 link-coffee"></a>
+              <a href="#" class="bi bi-instagram mx-2 link-coffee"></a>
             </div>
+
+            <div
+              class="text-gray1 text-center d-none d-md-block pb-3"
+              style="font-size: 16px"
+            >
+              <p>TEL: 00-0000-0000</p>
+              <p>Email: driftmood@gmail.com</p>
             </div>
+          </div>
         </div>
-        <div class="article">
-        <div class="articlePic ">
-            <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1" alt="">
-        </div>
-        <div class="articleMain">
-        <div class="loveIcon"> 
-        <p></p>
-        <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 40px;"></i>
-        </div>
-        <div class="articleContent">
-        <div class="articlePostdate">2023/10/19</div>
-        <div class="articleTitle">覺察偏見與不平等，找回自我最佳狀態</div>
-        <div class="articleTxt">日常生活中，每一個人面臨到不平等或歧視的處境，可能是由多重因子所交織在一起，有性別、族群、年齡、身心障礙、性傾向、職業等等。如果沒有特別覺察性別刻板印象，社會文化價值觀所形塑的氣氛，或是從原生家庭承襲而來的「應該」，是會對</div>
-        </div>
-        </div>
-        </div>
-        <div class="article">
-        <div class="articlePic ">
-            <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1" alt="">
-        </div>
-        <div class="articleMain">
-        <div class="loveIcon"> 
-        <p></p>
-        <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 40px;"></i>
-        </div>
-        <div class="articleContent">
-        <div class="articlePostdate">2023/10/19</div>
-        <div class="articleTitle">情緒的表達、接納及照顧</div>
-        <div class="articleTxt">即使是身為心理師的品皓，有時候也是會對小孩沒有耐心，甚至會和小孩一起「爆炸」。或許孩子真的就是爸爸媽媽「甜蜜的負擔」；而「情緒」也是我們需要一直不斷練習、不斷學習的課題。或許我們可以試試看更細膩地去瞭解情緒發生的階段和細節。當我們更了解自己、了解自己的情緒，就能夠更有餘裕地應對「衝突現場」。</div>
-        </div>
-        </div>
-        </div>
-        <div class="article">
-        <div class="articlePic ">
-            <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/07/27/99/3810557.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=930&nt=1" alt="">
-        </div>
-        <div class="articleMain">
-        <div class="loveIcon"> 
-        <p></p>
-        <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 40px;"></i>
-        </div>
-        <div class="articleContent">
-        <div class="articlePostdate">2023/10/19</div>
-        <div class="articleTitle">失去所愛該如何面對悲傷</div>
-        <div class="articleTxt">當失去所愛，我們都會悲傷。
-            悲傷從來不是一個待解決的問題，而是一段需要扛過去的經歷…
-            無論是突如其來的道別、失去至親摯愛，都會令人心神離線、情緒潰堤，不知該如何生活…你不只需要一個宣洩情緒與喘息的地方，還可以給自己合適的關懷與幫助。</div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a class="active" href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
-        </div>
-            </div>
-            </div>
+      </div>
 
-<div class="heartImg">
-<img src="heartImg.png" alt="一個手繪的愛心圖案">
-</div>
-<div class="tail"></div>
-        </div>
-    </div>   
+      <!-- 聲明 -->
+      <div
+        class="disclaimer text-gray1 text-center border-top border-3 border-gray4 my-2 pt-5 fs-6"
+      >
+        <p>Copyright ©2023 Search for XX All right reserved.</p>
+        <p>本專題僅為學習用途，不做任何商業使用，圖片來源請見 github repo</p>
+      </div>
+    </footer>
 
-</div>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-</div>
-</div>
-
-
-
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<!-- Option   <div class="container text-center">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Option   <div class="container text-center">
 <div class="row">
 2: Separate Popper and Bootstrap JS -->
-<!--
+    <!--
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
 -->
-</body>
+  </body>
 </html>
