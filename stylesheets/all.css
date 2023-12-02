@@ -15964,6 +15964,11 @@ textarea.form-control-lg {
   height: 360px;
 }
 
+.box-2 {
+  width: auto;
+  height: 260px;
+}
+
 .logo {
   width: 116px;
   height: 48px;
