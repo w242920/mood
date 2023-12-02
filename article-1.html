@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Noto+Sans+TC:wght@700&family=Noto+Serif+SC:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+SC:wght@700&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -56,7 +56,7 @@
     <!-- 導覽列 -->
     <nav class="navbar fixed-top navbar-expand-lg bg-body-white">
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="./index.html"
           ><img
             class=""
             src="/pictures/logo.png"
@@ -81,40 +81,44 @@
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="./about.html"
                 >關於我們</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+              <a
+                class="nav-link link-primary mx-2 mx-xl-3"
+                href="./article.html"
                 >專欄文章</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="./book.html"
                 >推薦書籍</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="./video.html"
                 >推薦影片</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link link-primary mx-2 mx-xl-3" href="#">留言板</a>
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="./board.html"
+                >留言板</a
+              >
             </li>
           </ul>
 
           <div class="d-flex flex-column flex-lg-row my-3">
             <button
               type="button"
-              class="btn btn-outline-coffee px-5 mb-lg-0 mx-8 mx-md-9 mx-lg-0 mb-2 mb-lg-0 me-lg-3"
+              class="btn btn-outline-coffee px-5 mb-lg-0 mx-8 mx-md-10 mx-lg-0 mb-2 mb-lg-0 me-lg-3"
             >
               登入
             </button>
             <button
               type="button"
-              class="btn btn-coffee px-5 mx-8 mx-md-9 mx-lg-0"
+              class="btn btn-coffee px-5 mx-8 mx-md-10 mx-lg-0"
             >
               註冊
             </button>
@@ -151,7 +155,7 @@
             >
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                <li class="breadcrumb-item"><a href="#">推薦影片</a></li>
+                <li class="breadcrumb-item"><a href="#">專欄文章</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
                   別叫憂鬱的人要快樂一點，會有反效果
                 </li>
@@ -245,14 +249,14 @@
 
                   <div class="col-12">
                     <div class="d-flex">
-                      <a href="#" class="bi bi-heart link-milktea fs-2"></a>
+                      <a href="#" class="fs-2 link-milktea"
+                        ><span class="bi bi-heart"></span
+                      ></a>
                       <div class="ms-2 me-4 mt-2">
-                        <h4 class="articleTitle fs-3">
+                        <h4 class="articleTitle fs-3 fw-bold">
                           別叫憂鬱的人要快樂一點,會有反效果
                         </h4>
-                        <p
-                          class="articlePostdate Noto-serif-SC text-gray3 mt-1"
-                        >
+                        <p class="articlePostdate text-gray3 mt-1">
                           2023/10/19
                         </p>
                         <p class="articleTxt my-3 Montserrat fs-5">
@@ -389,6 +393,197 @@
             </div>
           </div>
         </div> -->
+        <!-- 推薦文章區塊 -->
+        <div class="d-flex flex-column">
+          <div class="d-flex flex-column">
+            <div class="container my-4">
+              <div class="text-center">
+                <p
+                  class="Montserrat text-gray2 fs-3"
+                  style="letter-spacing: 3px"
+                >
+                  ARTICLE
+                </p>
+                <p class="text-gray1 fs-2 fw-bold" style="letter-spacing: 10px">
+                  ——— 專欄文章 ———
+                </p>
+                <img
+                  class="d-md-none mx-auto"
+                  src="./pictures/article.png"
+                  alt="一個愛心圖案"
+                  style="width: 150px"
+                />
+                <img
+                  class="d-none d-md-block mx-auto"
+                  src="./pictures/article.png"
+                  alt="一個愛心圖案"
+                  style="width: 180px"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="article-cards row row-cols-1 row-cols-lg-2">
+              <div class="article-card col mb-3 pt-3 px-4 px-md-2">
+                <div
+                  class="border-top border-1 border-gray4 d-lg-none mb-5"
+                ></div>
+                <div class="d-flex flex-column flex-lg-row">
+                  <div
+                    class="article-number"
+                    style="font-size: 60px; letter-spacing: 3px"
+                  >
+                    <p class="Montserrat text-gray1 text-center me-lg-2">01</p>
+                  </div>
+                  <div class="">
+                    <div class="mt-lg-3">
+                      <div class="more-article-title mb-3">
+                        <h4 class="text-gray1 fs-3 fw-bold">
+                          別叫憂鬱的人要快樂一點，會有反效果
+                        </h4>
+                      </div>
+                      <div class="more-article-text mb-4">
+                        <div class="overflow-hidden" style="height: 6rem">
+                          <p class="text-gray1" style="font-size: 20px">
+                            許多人會對憂鬱症有不適當的理解，在遇到親友有這方面的困擾時，常會以自身經驗去提供建議，會講一些像是：「就多想一點快樂的事啊」、「那些不好的事就不要想就好了」、「就像我一樣不期不待就不會有傷害啊」…
+                            這一類的話。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-5 d-flex justify-content-center justify-content-lg-start"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-outline-coffee fs-5 px-4 py-2"
+                      >
+                        閱讀更多
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article-card col mb-3 pt-3 px-4 px-md-2">
+                <div
+                  class="border-top border-1 border-gray4 d-lg-none mb-5"
+                ></div>
+                <div class="d-flex flex-column flex-lg-row">
+                  <div
+                    class="article-number"
+                    style="font-size: 60px; letter-spacing: 3px"
+                  >
+                    <p class="Montserrat text-gray1 text-center me-lg-2">02</p>
+                  </div>
+                  <div class="">
+                    <div class="mt-lg-3">
+                      <div class="more-article-title mb-3">
+                        <h4 class="text-gray1 fs-3 fw-bold">
+                          從覺察他人回歸瞭解自我，你我都要社會情緒學習
+                        </h4>
+                      </div>
+                      <div class="more-article-text mb-4">
+                        <div class="overflow-hidden" style="height: 6rem">
+                          <p class="text-gray1" style="font-size: 20px">
+                            台灣的學生擅長「自我管理」與「社會覺察」，卻不擅長「自我覺察」很少探究自己的內心、定位與價值觀。在無法迴避的資訊爆炸時代，面對...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-5 d-flex justify-content-center justify-content-lg-start"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-outline-coffee fs-5 px-4 py-2"
+                      >
+                        閱讀更多
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article-card col mb-3 pt-3 px-4 px-md-2">
+                <div
+                  class="border-top border-1 border-gray4 d-lg-none mb-5"
+                ></div>
+                <div class="d-flex flex-column flex-lg-row">
+                  <div
+                    class="article-number"
+                    style="font-size: 60px; letter-spacing: 3px"
+                  >
+                    <p class="Montserrat text-gray1 text-center me-lg-2">03</p>
+                  </div>
+                  <div class="">
+                    <div class="mt-lg-3">
+                      <div class="more-article-title mb-3">
+                        <h4 class="text-gray1 fs-3 fw-bold">
+                          找回接住自己的勇氣，允許愛自己
+                        </h4>
+                      </div>
+                      <div class="more-article-text mb-4">
+                        <div class="overflow-hidden" style="height: 6rem">
+                          <p class="text-gray1" style="font-size: 20px">
+                            往黑暗的地方多探索一點，心理的其他地方反而因此被點亮了。我們或許都有懷疑自己是不是值得被愛的時候，也曾經在低潮時嘗試接住自己，...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-5 d-flex justify-content-center justify-content-lg-start"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-outline-coffee fs-5 px-4 py-2"
+                      >
+                        閱讀更多
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article-card col mb-3 pt-3 px-4 px-md-2">
+                <div
+                  class="border-top border-1 border-gray4 d-lg-none mb-5"
+                ></div>
+                <div class="d-flex flex-column flex-lg-row">
+                  <div
+                    class="article-number"
+                    style="font-size: 60px; letter-spacing: 3px"
+                  >
+                    <p class="Montserrat text-gray1 text-center me-lg-2">04</p>
+                  </div>
+                  <div class="">
+                    <div class="mt-lg-3">
+                      <div class="more-article-title mb-3">
+                        <h4 class="text-gray1 fs-3 fw-bold">
+                          覺察偏見與不平等，找回自我最佳狀態
+                        </h4>
+                      </div>
+                      <div class="more-article-text mb-4">
+                        <div class="overflow-hidden" style="height: 6rem">
+                          <p class="text-gray1" style="font-size: 20px">
+                            日常生活中，每一個人面臨到不平等或歧視的處境，可能是由多重因子所交織在一起，有性別、族群、年齡、身心障礙、性傾向、職業等等。如...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-5 d-flex justify-content-center justify-content-lg-start"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-outline-coffee fs-5 px-4 py-2"
+                      >
+                        閱讀更多
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
 
