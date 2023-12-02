@@ -45,7 +45,12 @@
     <nav class="navbar fixed-top navbar-expand-lg bg-body-white">
       <div class="container">
         <a class="navbar-brand" href="./index.html"
-          ><img class="logo" src="/pictures/logo.png" alt="logo圖片"
+          ><img
+            class=""
+            src="/pictures/logo.png"
+            alt="logo圖片"
+            width="116px"
+            height="48px"
         /></a>
         <button
           class="navbar-toggler"
@@ -64,7 +69,7 @@
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="./about.html"
                 >關於我們</a
               >
             </li>
@@ -76,7 +81,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link link-primary mx-2 mx-xl-3" href="#"
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="./book.html"
                 >推薦書籍</a
               >
             </li>
@@ -86,7 +91,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link link-primary mx-2 mx-xl-3" href="#">留言板</a>
+              <a class="nav-link link-primary mx-2 mx-xl-3" href="./board.html"
+                >留言板</a
+              >
             </li>
           </ul>
 
@@ -131,6 +138,19 @@
         class="py-5 px-md-5"
         style="background-image: url(./pictures/gradient-background.png)"
       >
+        <!-- 麵包屑 -->
+        <nav
+          class="crumbs my-5"
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">關於我們</li>
+          </ol>
+        </nav>
+
+        <!-- 介紹圖文 -->
         <div class="container">
           <div
             class="about-us row justify-content-center flex-row-reverse align-items-center"
