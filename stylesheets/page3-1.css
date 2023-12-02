@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn {
+  font-weight: bold;
+  background-color: #ffdab5;
+  color: #7c604b;
+  border-color: #7c604b;
+  width: 112px;
+  height: 32px;
+  border-radius: 6px;
+  /* margin-right: 16px; */
+}
+.btn:hover {
+  background: #2baf8d;
+}
+.btn:active {
+  background: #7c604b;
+} /*# sourceMappingURL=page3style.css.map */
+
+.body {
+  font-size: 20px;
+  width: 100%; /* 將寬度設置為100% */
+}
+.crumbs {
+  /* height: 27px; */
+  padding-top: 68px;
+  margin-bottom: 60px;
+}
+.articleTop {
+  background-color: #fff2e8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search a {
+  text-decoration: none;
+  color: #3d1101;
+}
+.classify,
+.search {
+  display: inline-block;
+}
+.main {
+  /* max-width: 1294px; */
+  background-color: #fff2e8;
+}
+.articleContainer {
+  margin: 68px 0 0 0;
+  background-color: #fff2e8;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  width: 100%; /* 將寬度設置為100% */
+}
+.articleContainer .container-fluid {
+  padding: 0; /* 清除內邊距 */
+}
+.article {
+  /* background-color: white; */
+  /* display: flex; */
+  /* height: 588px; */
+  max-width: 1294px;
+  /* border:solid 2px blue; */
+  border-radius: 10px;
+  margin-bottom: 69px;
+}
+
+/*
+.articleMain{
+max-width: 461.96px;
+border:solid 2px orange;
+padding-top: 196px;}
+
+*/
+
+.articlePic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 574px; /* 設定最大寬度 */
+  max-height: 440px; /* 設定最大高度 */
+  width: 100%; /* 使寬度充滿父元素 */
+  margin: 0 auto; /* 水平居中 */
+}
+.articlePic img {
+  max-width: 100%; /* 使圖片最大寬度不超過容器寬度 */
+  max-height: 100%; /* 使圖片最大高度不超過容器高度 */
+  height: auto; /* 保持高度自適應內容 */
+  display: block; /* 去除圖片底部空白 */
+}
+.articleTitle {
+  font-weight: bold;
+}
+.loveIcon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.fa fa-heart-o {
+  margin-right: auto;
+}
+
+.articleTitle {
+  padding: 24px 0 24px 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+.pagination {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  align-items: center; /* 垂直置中 */
+  height: 5vh; /* 這裡假設容器高度佔滿整個視窗 */
+}
+/* 分页链接 */
+.pagination a {
+  color: #7c604b;
+  font-size: 24px;
+  font-weight: bold;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: solid 1px #7c604b;
+  border-radius: 100%;
+  margin: 8px;
+}
+
+/* 设置活动/当前链接的样式 */
+.pagination a.active {
+  background-color: #7c604b;
+  color: white;
+}
+
+/* 在鼠标悬停时添加灰色背景色 */
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.heartImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 68px;
+}
+.moreArticle {
+  background-color: #ffdab5;
+  /* width: 1296px; */
+  /* display: flex;
+justify-content: center;
+align-items: center; */
+}
+.moreArticleImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 448px; /* 設定最大寬度 */
+  max-height: 300px; /* 設定最大高度 */
+  width: 100%; /* 使寬度充滿父元素 */
+  margin: 0 auto; /* 水平居中 */
+}
+.moreArticleImg img {
+  max-width: 100%; /* 使圖片最大寬度不超過容器寬度 */
+  max-height: 100%; /* 使圖片最大高度不超過容器高度 */
+  height: auto; /* 保持高度自適應內容 */
+  display: block; /* 去除圖片底部空白 */
+}
+.col {
+  border: solid 2px black;
+  display: flex;
+}
+.moreArticleNum {
+  margin-right: 16px;
+  font-size: 56px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 10;
+}
+.moreArticleTitle {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 24px;
+  font-weight: bold;
+}
+.moreArticleTxt {
+  font-size: 16px;
+}
