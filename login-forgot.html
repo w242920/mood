@@ -94,7 +94,9 @@
                 >
               </li>
             </ul>
-            <div class="d-flex flex-column align-items-center flex-lg-row my-3">
+            <div
+              class="d-flex flex-column align-items-center flex-lg-row my-3 d-none d-lg-block invisible"
+            >
               <a
                 type="button"
                 href="./login.html"
@@ -117,130 +119,68 @@
       </nav>
     </div>
 
-    <!-- Banner 圖 -->
-    <header class="header1" style="background-image: url(./pictures/hero.png)">
-      <!-- md 以下 -->
-      <div class="container d-md-none" style="width: 20rem">
-        <h1 class="text-white display-6 pt-9 ms-5">
-          我們想做一個網站，整理相關的推薦書籍、文章、影片，希望給對人生和內心有迷茫的人一些思考方向。
-        </h1>
-      </div>
-      <!-- md 以上 -->
-      <div class="container d-none d-md-block" style="width: 55rem">
-        <h1 class="text-white display-6 pt-9 ms-5 ms-9">
-          我們想做一個網站，整理相關的推薦書籍、文章、影片，希望給對人生和內心有迷茫的人一些思考方向。
-        </h1>
-      </div>
-    </header>
-
-    <!-- 網頁內容 -->
-    <main>
-      <!-- 漸層背景 -->
-      <section
-        class="py-5 px-md-5"
-        style="background-image: url(./pictures/gradient-background.png)"
-      >
+    <!-- 背景色 -->
+    <div class="pb-7" style="background-color: #fff2e8">
+      <!-- 網頁內容 -->
+      <main class="container pt-4">
         <!-- 麵包屑 -->
-        <div class="container">
-          <nav
-            class="crumbs my-5"
-            style="--bs-breadcrumb-divider: '>'"
-            aria-label="breadcrumb"
-          >
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                關於我們
-              </li>
-            </ol>
-          </nav>
-        </div>
+        <nav
+          class="my-5"
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+            <li class="breadcrumb-item"><a href="./login.html">登入</a></li>
+            <li class="breadcrumb-item active" aria-current="page">忘記密碼</li>
+          </ol>
+        </nav>
 
-        <!-- 介紹圖文 -->
-        <div class="container">
-          <div
-            class="about-us row justify-content-center flex-row-reverse align-items-center"
-          >
-            <div class="col-xl-5 col-xxl-4 p-5 p-xl-3 d-md-none">
-              <img
-                class="box-3 object-fit-cover rounded-5"
-                src="https://images.unsplash.com/photo-1591653314629-77646666ce77?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
+        <!-- 登入 -->
+        <div class="row">
+          <div class="col-0 col-md-1 col-lg-2 col-xl-3"></div>
+          <section class="col-md-10 col-lg-8 col-xl-6 px-3">
+            <a
+              href="./login-forgot.html"
+              type="button"
+              class="btn btn-coffee px-4 px-md-5 py-2 ms-3"
+            >
+              忘記密碼
+            </a>
+            <div class="card mt-n1 rounded-4 px-3">
+              <div class="card-body mb-5 pb-2">
+                <div
+                  class="inputs d-flex flex-column align-items-center mt-4 mb-3"
+                >
+                  <input
+                    type="email"
+                    class="form-control border-milktea rounded-4 text-gray4 py-2 my-2"
+                    style="width: 22rem"
+                    name="註冊電子信箱"
+                    placeholder=" 請輸入註冊電子信箱"
+                  />
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center mt-5"
+                >
+                  <a
+                    href="./login.html"
+                    class="btn btn-outline-coffee mt-2 px-5 py-2 me-3"
+                    >返回</a
+                  >
+                  <a
+                    href="./login-reset.html"
+                    class="btn btn-coffee mt-2 px-5 py-2"
+                    >寄送</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="col-xl-5 col-xxl-4 p-5 p-xl-3 d-none d-md-block">
-              <img
-                class="box-1 object-fit-cover rounded-5"
-                src="https://images.unsplash.com/photo-1591653314629-77646666ce77?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-            </div>
-            <div class="col-xl-5 col-xxl-4 p-5 p-xl-3">
-              <p class="fs-4">
-                也許漂流，是人生之必須， <br />
-                猶如浮木，未曾停歇。 <br />
-                家庭的糾結，感情的迷境，<br />
-                工作的壓力，心靈的煎熬。<br />
-                <br />
-                風浪來襲，命運的考驗， <br />
-                我是浮木，無法預知結局。 <br />
-                但心無所懼，在星光下追求，<br />
-                夜晚的黑暗，不過是一個過程。
-              </p>
-            </div>
-          </div>
-          <div class="about-us row justify-content-center align-items-center">
-            <div class="col-xl-5 col-xxl-4 p-5 p-xl-3 d-md-none">
-              <img
-                class="box-3 object-fit-cover rounded-5"
-                src="https://plus.unsplash.com/premium_photo-1690443365954-545607f26ce5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-            </div>
-            <div class="col-xl-5 col-xxl-4 p-5 p-xl-3 d-none d-md-block">
-              <img
-                class="box-1 object-fit-cover rounded-5"
-                src="https://plus.unsplash.com/premium_photo-1690443365954-545607f26ce5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-            </div>
-            <div class="col-xl-5 col-xxl-4 p-5 p-xl-3">
-              <p class="fs-4">
-                我漂過無數海岸和沙灘， <br />
-                見識過大自然的威風和柔情。<br />
-                每次跌宕起伏，都是一段冒險， <br />
-                每次探索歷程，都是一場學習。<br />
-                <br />
-                有時寂寞，有時疲憊， <br />
-                我卻明瞭，這是成長的代價。<br />
-                漂流浮木，或許無法主掌， <br />
-                卻能選擇，如何面對前行。
-              </p>
-            </div>
-          </div>
-          <div
-            class="about-us row justify-content-center flex-row-reverse align-items-center"
-          >
-            <div class="col-xl-5 col-xxl-4 p-5 p-xl-3 d-md-none">
-              <img
-                class="box-3 object-fit-cover rounded-5"
-                src="https://images.unsplash.com/photo-1655917914007-cda647b5e8cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-            </div>
-            <div class="col-xl-5 col-xxl-4 p-5 p-xl-3 d-none d-md-block">
-              <img
-                class="box-1 object-fit-cover rounded-5"
-                src="https://images.unsplash.com/photo-1655917914007-cda647b5e8cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-            </div>
-            <div class="col-xl-5 col-xxl-4 p-5 p-xl-3">
-              <p class="fs-4">
-                也許漂流，是人生之必須， <br />
-                如詩歌般，充滿著神秘。 <br />
-                當我再次靠岸，會發現自己， <br />
-                更加堅強，更加智慧，更加自由。 <br />
-              </p>
-            </div>
-          </div>
+          </section>
+          <div class="col-0 col-md-1 col-lg-2 col-xl-3"></div>
         </div>
-      </section>
-    </main>
+      </main>
+    </div>
 
     <!-- 頁尾資訊 -->
     <footer class="container d-flex flex-column justify-content-center">
