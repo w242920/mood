@@ -42,74 +42,80 @@
 
   <body>
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"
-          ><img
-            src="./pictures/logo.png"
-            alt="logo圖片"
-            width="116px"
-            height="48px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="material-symbols-outlined text-coffee">menu</span>
-        </button>
-        <div
-          class="collapse navbar-collapse ms-3 ms-xl-5 text-center"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav ms-lg-5 me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link link-primary mx-xl-3" href="./about.html"
-                >關於我們</a
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              src="./pictures/logo.png"
+              alt="logo圖片"
+              width="116px"
+              height="48px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-symbols-outlined text-coffee">menu</span>
+          </button>
+          <div
+            class="collapse navbar-collapse ms-3 ms-xl-5 text-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-lg-5 me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link link-primary mx-xl-3" href="./about.html"
+                  >關於我們</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-primary mx-xl-3" href="./article.html"
+                  >專欄文章</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-primary mx-xl-3" href="./book.html"
+                  >推薦書籍</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-primary mx-xl-3" href="./video.html"
+                  >推薦影片</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-primary mx-xl-3" href="./board.html"
+                  >留言板</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex flex-column align-items-center flex-lg-row my-3">
+              <a
+                type="button"
+                href="./login.html"
+                style="width: 10rem"
+                class="btn btn-outline-coffee px-5 mb-2 mb-lg-0 me-lg-3"
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-primary mx-xl-3" href="./article.html"
-                >專欄文章</a
+                登入
+              </a>
+              <a
+                type="button"
+                href="./registration.html"
+                style="width: 10rem"
+                class="btn btn-coffee px-5"
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-primary mx-xl-3" href="./book.html"
-                >推薦書籍</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-primary mx-xl-3" href="./video.html"
-                >推薦影片</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-primary mx-xl-3" href="./board.html"
-                >留言板</a
-              >
-            </li>
-          </ul>
-          <div class="d-flex flex-column flex-lg-row my-3">
-            <button
-              type="button"
-              class="btn btn-outline-coffee px-5 mx-5 mx-md-10 mx-lg-0 mb-2 mb-lg-0 me-lg-3"
-            >
-              登入
-            </button>
-            <button
-              type="button"
-              class="btn btn-coffee px-5 mx-5 mx-md-10 mx-lg-0"
-            >
-              註冊
-            </button>
+                註冊
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <!-- Banner 圖 -->
     <header
@@ -819,5 +825,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/book.js"></script>
   </body>
 </html>
